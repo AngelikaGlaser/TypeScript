@@ -31,7 +31,7 @@ router.get("/lisa-toode/:id/:nimi/:hind/:aktiivne", (req: Request, res: Response
             Number(req.params.id),
             req.params.nimi,
             Number(req.params.hind),
-            req.params.aktiivne === "true")
+            req.params.aktiivne === true)
     )
     res.send(tooted)
 })
